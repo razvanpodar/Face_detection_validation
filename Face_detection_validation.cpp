@@ -9,7 +9,7 @@ CascadeClassifier face_cascade; // cascade clasifier object for face
 CascadeClassifier eyes_cascade; // cascade clasifier object for eyes
 CascadeClassifier nose_cascade; // cascade clasifier object for nose
 
-voiFaceDetectandDisplay(const string& window_name, Mat frame, int minFaceSize, int minEyeSize)
+void FaceDetectandDisplay(const string& window_name, Mat frame, int minFaceSize, int minEyeSize)
 {
 	std::vector<Rect> faces;
 	Mat frame_gray;
